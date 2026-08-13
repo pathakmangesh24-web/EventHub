@@ -6,38 +6,40 @@ function Contact() {
 
       {/* Hero Section */}
       <section
-        className="relative h-[510px] w-full bg-cover bg-center"
+        className="relative h-[300px] w-full bg-cover bg-center sm:h-[400px] lg:h-[510px]"
         style={{
           backgroundImage:
             "linear-gradient(rgba(245, 166, 75, 0.72), rgba(245, 166, 75, 0.72)), url('https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?auto=format&fit=crop&w=1600&q=80')",
-        }}
+         }}
       >
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-5xl font-bold text-white drop-shadow-lg">
+          <h1 className="text-3xl font-bold text-white drop-shadow-lg sm:text-4xl lg:text-5xl">
             Contact Us
           </h1>
         </div>
       </section>
 
       {/* Contact Information */}
-      <section className="mx-auto max-w-6xl px-6 py-8 text-center">
+      <section className="mx-auto max-w-6xl px-5 py-8 text-center sm:px-6 lg:py-12">
 
-        <div className="space-y-2 text-[16px] leading-6">
+        <div className="space-y-2 text-sm leading-6 sm:text-base">
           <p>888 Griffiths Way, Themeland ML 12345</p>
+
           <p>Tel: (987) 654-3210</p>
-          <p>
+
+          <p className="break-words">
             Email:{" "}
             <a
               href="mailto:kirandighe1945@gmail.com"
               className="text-blue-600 hover:underline"
             >
-              kirandighe1945@gmail.com
+              mukundpatil75145git@gmail.com
             </a>
           </p>
         </div>
 
         {/* Opening Hours */}
-        <div className="mt-12 space-y-2 text-[16px]">
+        <div className="mt-10 space-y-2 text-sm sm:mt-12 sm:text-base">
           <p className="font-medium">Open Hours:</p>
           <p>Monday-Friday: 9:00AM-7:00PM</p>
           <p>Saturday: 10:30AM-8:00PM</p>
@@ -47,15 +49,15 @@ function Contact() {
       </section>
 
       {/* Contact Form */}
-      <section className="mx-auto max-w-5xl px-6 pb-12">
+      <section className="mx-auto w-full max-w-5xl px-5 pb-12 sm:px-6 lg:pb-16">
 
-        <form className="space-y-7">
+        <form className="space-y-6 sm:space-y-7">
 
           {/* First Name */}
           <div>
             <label
               htmlFor="firstName"
-              className="mb-2 block text-[16px] font-bold"
+              className="mb-2 block text-sm font-bold sm:text-base"
             >
               First Name*
             </label>
@@ -63,7 +65,7 @@ function Contact() {
             <input
               id="firstName"
               type="text"
-              className="h-[50px] w-full rounded border border-gray-300 px-4 outline-none transition focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+              className="h-12 w-full rounded border border-gray-300 px-4 outline-none transition focus:border-blue-500 focus:ring-1 focus:ring-blue-500 sm:h-[50px]"
             />
           </div>
 
@@ -71,7 +73,7 @@ function Contact() {
           <div>
             <label
               htmlFor="lastName"
-              className="mb-2 block text-[16px] font-bold"
+              className="mb-2 block text-sm font-bold sm:text-base"
             >
               Last Name*
             </label>
@@ -79,7 +81,7 @@ function Contact() {
             <input
               id="lastName"
               type="text"
-              className="h-[50px] w-full rounded border border-gray-300 px-4 outline-none transition focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+              className="h-12 w-full rounded border border-gray-300 px-4 outline-none transition focus:border-blue-500 focus:ring-1 focus:ring-blue-500 sm:h-[50px]"
             />
           </div>
 
@@ -87,7 +89,7 @@ function Contact() {
           <div>
             <label
               htmlFor="email"
-              className="mb-2 block text-[16px] font-bold"
+              className="mb-2 block text-sm font-bold sm:text-base"
             >
               Email*
             </label>
@@ -95,7 +97,7 @@ function Contact() {
             <input
               id="email"
               type="email"
-              className="h-[50px] w-full rounded border border-gray-300 px-4 outline-none transition focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+              className="h-12 w-full rounded border border-gray-300 px-4 outline-none transition focus:border-blue-500 focus:ring-1 focus:ring-blue-500 sm:h-[50px]"
             />
           </div>
 
@@ -103,7 +105,7 @@ function Contact() {
           <div>
             <label
               htmlFor="message"
-              className="mb-2 block text-[16px] font-bold"
+              className="mb-2 block text-sm font-bold sm:text-base"
             >
               Message*
             </label>
@@ -115,11 +117,11 @@ function Contact() {
             ></textarea>
           </div>
 
-          
-          <div className="flex justify-center">
+          {/* Submit Button */}
+          <div className="flex justify-center pt-2">
             <button
               type="submit"
-              className="rounded-xl bg-[#4b382e] px-20 py-4 text-lg font-medium text-white transition hover:bg-[#382920] active:scale-95"
+              className="w-full rounded-xl bg-[#4b382e] px-8 py-3 text-base font-medium text-white transition hover:bg-[#382920] active:scale-95 sm:w-auto sm:px-20 sm:py-4 sm:text-lg"
             >
               Submit
             </button>
@@ -130,8 +132,13 @@ function Contact() {
 
       {/* Back To Top Button */}
       <button
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="fixed bottom-5 right-5 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-2xl font-bold text-white shadow-lg transition hover:bg-blue-700"
+        onClick={() =>
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          })
+        }
+        className="fixed bottom-5 right-5 flex h-11 w-11 items-center justify-center rounded-full bg-blue-600 text-xl font-bold text-white shadow-lg transition hover:bg-blue-700 sm:h-12 sm:w-12 sm:text-2xl"
         aria-label="Back to top"
       >
         ↑
