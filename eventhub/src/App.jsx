@@ -3,6 +3,7 @@ import Header from './components/header/Header'
 import Footer from "./components/footer/Footer"
 import Home from "./pages/home/Home"
 import SubFooter from "./components/footer/subFooter"
+import Contact from "./pages/contact/Contact";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
 
 <Header/>
  <Home/>
+ <Contact/>
  <SubFooter/>
 <Footer/>
 
@@ -25,6 +27,5 @@ function App() {
   )
 
 }
- 
-export default App
- 
+
+export default App;
