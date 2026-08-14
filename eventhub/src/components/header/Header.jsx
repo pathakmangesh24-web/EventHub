@@ -22,7 +22,7 @@ const Header = () => {
           <div className="text-2xl font-black tracking-wide text-black">KIRAN DIGHE</div>
         </Link>
 
-        <nav className="hidden items-center gap-8 text-[15px] md:flex">
+        <nav className="hidden items-center gap-8 text-[15px] md:flex ml-100">
           <NavLink to="/" end className={navLinkClass}>
             Home
           </NavLink>

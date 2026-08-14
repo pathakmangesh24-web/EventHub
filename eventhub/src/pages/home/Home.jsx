@@ -24,14 +24,26 @@ const Home = () => {
 
           <div className="flex justify-center gap-4">
 
-            <button className="bg-white text-black px-8 py-3 rounded-lg hover:bg-black hover:text-white">
+            {/* <button className="bg-white text-black px-8 py-3 rounded-lg hover:bg-black hover:text-white">
               GET TICKETS
-            </button>
+            </button> */}
+            <a
+              href="https://in.bookmyshow.com/explore/events"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-black px-8 py-3 rounded-lg hover:bg-black hover:text-white inline-block"
+            >
+              GET TICKETS
+            </a>
 
-            <button className="border-2 border-white px-8 py-3 rounded-lg hover:bg-white hover:text-black">
+            <a
+              href="#craft-market"
+              className="border-2 border-white px-8 py-3 rounded-lg hover:bg-white hover:text-black inline-block text-white transition-colors"
+            >
               LEARN MORE
-            </button>
+            </a>
 
+            
           </div>
 
         </div>
@@ -39,7 +51,7 @@ const Home = () => {
 
 
       {/* Cards Section */}
-      <section className="py-10 bg-white">
+      <section id="craft-market" className="py-10 bg-white scroll-smooth">
 
         <div className="text-center mb-8">
 
