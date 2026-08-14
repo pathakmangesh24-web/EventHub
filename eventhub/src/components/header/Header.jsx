@@ -18,12 +18,7 @@ const Header = () => {
     <header className="w-full border-b border-slate-200 bg-white shadow-sm">
       <div className="mx-auto flex h-[70px] max-w-[1350px] items-center justify-between px-5">
         <Link to="/" className="flex items-center gap-2">
-          <img
-            src="/kiran-dighe-logo.png"
-            alt="Kiran Dighe"
-            className="h-[60px] object-contain"
-          />
-          <div className="text-xl font-black tracking-wide text-black">KIRAN DIGHE</div>
+          <div className="text-2xl font-black tracking-wide text-black">KIRAN DIGHE</div>
         </Link>
 
         <nav className="hidden items-center gap-8 text-[15px] md:flex ml-100">
