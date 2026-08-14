@@ -48,7 +48,7 @@ function Event() {
             key={event.title}
             className="flex min-h-[210px] flex-col justify-center rounded-[14px] border border-slate-200 bg-white px-6 py-8 shadow-[0_4px_12px_rgba(15,23,42,0.08)]"
           >
-            <h3 className="m-0 mb-4 text-[clamp(1.8rem,2vw,2.3rem)] font-medium leading-[1.15] text-blue-600">
+            <h3 className="m-0 mb-4 text-[clamp(1.8rem,2vw,2.3rem)] font-medium leading-[1.15] text-blue-600 whitespace-nowrap">
               {event.title}
             </h3>
 
