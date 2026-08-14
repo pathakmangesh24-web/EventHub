@@ -29,7 +29,7 @@ function Event() {
   return (
     <main className="flex w-full flex-col gap-6 items-center justify-center min-h-screen">
       <section
-        className="relative flex min-h-[440px] items-center justify-center overflow-hidden bg-cover bg-center shadow-[inset_0_0_0_1px_rgba(255,255,255,0.15)] max-[620px]:min-h-[300px]"
+        className="relative flex w-screen min-h-[440px] items-center justify-center overflow-hidden bg-cover bg-center shadow-[inset_0_0_0_1px_rgba(255,255,255,0.15)] max-[620px]:min-h-[300px]"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80')",
