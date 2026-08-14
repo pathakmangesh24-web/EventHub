@@ -29,7 +29,7 @@ const Footer = () => {
                 </div>
 
                 <div className="text-2xl font-bold tracking-[3px]">
-                  KIRAN DIGHE
+                  MANGESH PATHAK
                 </div>
 
               </div>
@@ -37,7 +37,7 @@ const Footer = () => {
 
             {/* Copyright */}
             <p className="mt-16 text-sm font-medium">
-              © 2025 Kiran Dighe. All Rights Reserved.
+              © 2025 Mangesh Pathak. All Rights Reserved.
             </p>
 
           </div>
@@ -60,7 +60,7 @@ const Footer = () => {
                 </svg>
 
                 <span>
-                  Kolhewadi, Sangamner, Ahilyanagar
+                  Walur, Selu, Parbhani
                 </span>
               </div>
 
@@ -76,7 +76,7 @@ const Footer = () => {
                 </svg>
 
                 <a
-                  href="mailto:kiran­dighe2004@gmail.com"
+                  href="mailto:pathakmangesh24@gmail.com"
                   className="hover:text-blue-400 transition"
                 >
                   kirandighe2004@gmail.com
