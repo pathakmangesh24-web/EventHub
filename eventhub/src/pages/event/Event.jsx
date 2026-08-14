@@ -46,7 +46,7 @@ function Event() {
         {eventDates.map((event) => (
           <article
             key={event.title}
-            className="flex min-h-[210px] flex-col justify-center rounded-[14px] border border-slate-200 bg-white px-6 py-8 shadow-[0_4px_12px_rgba(15,23,42,0.08)]"
+            className="flex min-h-[210px] flex-col justify-center rounded-[14px] border border-slate-200 bg-white px-6 py-8 shadow-[0_4px_12px_rgba(15,23,42,0.08)] transition-all duration-300 hover:shadow-[0_12px_24px_rgba(15,23,42,0.15)] hover:-translate-y-2 hover:border-blue-400"
           >
             <h3 className="m-0 mb-4 text-[clamp(1rem,1.5vw,1.5rem)] font-medium leading-[1.3] text-blue-600 whitespace-nowrap">
               {event.title}

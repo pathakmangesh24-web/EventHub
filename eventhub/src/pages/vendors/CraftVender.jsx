@@ -30,78 +30,122 @@ const CraftVender = () => {
 
       <div className="w-full bg-[#d9a7b1] px-6 py-12 text-white">
         <div className="mx-auto grid max-w-[1200px] gap-12 md:grid-cols-3">
-        {craftVendors.map((vendor) => (
-          <div key={vendor.name} className="space-y-4 py-4 text-center">
-            <h3 className="text-[1.8rem] font-normal leading-tight tracking-normal text-white">
-              {vendor.name}
-            </h3>
-            <p className="text-[0.9rem] font-normal text-white/90">{vendor.type}</p>
-            <p className="text-[0.9rem] font-bold text-white">Visit Website</p>
-            <p className="text-[0.9rem] font-bold text-white">Instagram</p>
-          </div>
-        ))}
+          {craftVendors.map((vendor) => (
+            <div key={vendor.name} className="space-y-4 py-4 text-center">
+              <h3 className="text-[1.8rem] font-normal leading-tight tracking-normal text-white">
+                {vendor.name}
+              </h3>
+              <p className="text-[0.9rem] font-normal text-white/90">{vendor.type}</p>
+              <p className="text-[0.9rem] font-bold text-white">Visit Website</p>
+              <p className="text-[0.9rem] font-bold text-white">Instagram</p>
+            </div>
+          ))}
         </div>
       </div>
 
       <div className="w-full bg-[#d9a7b1] px-6 py-12">
         <div className="mx-auto max-w-[1200px] flex flex-wrap justify-between gap-8">
           {/* Image 1 - Food/Pasta */}
-          <div className="overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
+          {/* <div className="overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
             <img
               src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=600&h=500&q=80"
               alt="Food vendor - Pasta"
               className="h-[400px] sm:h-[550px] md:h-[700px] w-full object-cover"
             />
+          </div> */}
+          <div className="group overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
+            <img
+              src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=600&h=500&q=80"
+              alt="Food vendor - Pasta"
+              className="h-[400px] sm:h-[550px] md:h-[700px] w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+            />
           </div>
 
           {/* Image 2 - Jewelry */}
-          <div className="overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
+          {/* <div className="overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
             <img
               src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&h=500&q=80"
               alt="Jewelry vendor"
               className="h-[400px] sm:h-[550px] md:h-[700px] w-full object-cover"
             />
+          </div> */}
+          <div className="group overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
+            <img
+              src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&h=500&q=80"
+              alt="Jewelry vendor"
+              className="h-[400px] sm:h-[550px] md:h-[700px] w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+            />
           </div>
 
           {/* Image 3 - Candies/Sweets */}
-          <div className="overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
+          {/* <div className="overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
             <img
               src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&h=500&q=80"
               alt="Candy vendor - Sweets"
               className="h-[400px] sm:h-[550px] md:h-[700px] w-full object-cover"
             />
+          </div> */}
+          <div className="group overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
+            <img
+              src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&h=500&q=80"
+              alt="Candy vendor - Sweets"
+              className="h-[400px] sm:h-[550px] md:h-[700px] w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+            />
           </div>
+
         </div>
       </div>
 
       <div className="w-full bg-[#d9a7b1] px-6 py-12">
         <div className="mx-auto max-w-[1200px] flex flex-wrap justify-between gap-8">
           {/* Image 4 - Candies */}
-          <div className="overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
+          {/* <div className="overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
             <img
               src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="Colorful candies and sweets"
               className="h-[400px] sm:h-[550px] md:h-[700px] w-full object-cover"
             />
+          </div> */}
+          <div className="group overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
+            <img
+              src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Colorful candies and sweets"
+              className="h-[400px] sm:h-[550px] md:h-[700px] w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+            />
           </div>
 
           {/* Image 5 - Community Event */}
-          <div className="overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
+          {/* <div className="overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
             <img
               src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&h=500&q=80"
               alt="Community event illustration"
               className="h-[400px] sm:h-[550px] md:h-[700px] w-full object-cover"
             />
+          </div> */}
+          <div className="group overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
+            <img
+              src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&h=500&q=80"
+              alt="Community event illustration"
+              className="h-[400px] sm:h-[550px] md:h-[700px] w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+            />
           </div>
 
           {/* Image 6 - Sale */}
-          <div className="overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
+          {/* <div className="overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
             <img
               src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=600&h=500&q=80"
               alt="Sale event"
               className="h-[400px] sm:h-[550px] md:h-[700px] w-full object-cover"
             />
+          </div> */}
+          <div className="group overflow-hidden rounded-3xl w-full md:w-[calc(33.333%-22px)]">
+            <img
+              src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=600&h=500&q=80"
+              alt="Sale event"
+              className="h-[400px] sm:h-[550px] md:h-[700px] w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+            />
           </div>
+
         </div>
       </div>
     </main>
