@@ -11,8 +11,7 @@ const Header = () => {
   ];
 
   const navLinkClass = ({ isActive }) =>
-    `transition ${
-      isActive ? 'text-blue-700 font-semibold' : 'text-slate-700 hover:text-blue-700'
+    `transition ${isActive ? 'text-blue-700 font-semibold' : 'text-slate-700 hover:text-blue-700'
     }`;
 
   return (
@@ -58,8 +57,7 @@ const Header = () => {
                     to={item.to}
                     onClick={() => setVendorOpen(false)}
                     className={({ isActive }) =>
-                      `block px-4 py-2 text-sm transition ${
-                        isActive ? 'bg-slate-100 text-blue-700' : 'text-slate-700 hover:bg-slate-100 hover:text-blue-700'
+                      `block px-4 py-2 text-sm transition ${isActive ? 'bg-slate-100 text-blue-700' : 'text-slate-700 hover:bg-slate-100 hover:text-blue-700'
                       }`
                     }
                   >
@@ -79,13 +77,32 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-5">
-          <button className="rounded-xl border border-slate-400 bg-[#51453f] px-5 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-[#3f3631]">
+          {/* <button className="rounded-xl border border-slate-400 bg-[#51453f] px-5 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-[#3f3631]">
             Buy Tickets
-          </button>
+          </button> */}
+          <a
+            href="https://in.bookmyshow.com/explore/events"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-xl border border-slate-400 bg-[#51453f] px-5 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-[#3f3631] inline-block"
+          >
+            Buy Tickets
+          </a>
 
           <div className="hidden items-center gap-4 text-slate-700 sm:flex">
-            <a href="#" aria-label="Facebook" className="transition hover:text-blue-600">
+            {/* <a href="#" aria-label="Facebook" className="transition hover:text-blue-600">
               <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current"><path d="M14 8h3V4h-3c-3.3 0-5 1.7-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.7.3-1 1-1z" /></svg>
+            </a> */}
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="transition hover:text-blue-600"
+            >
+              <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current">
+                <path d="M14 8h3V4h-3c-3.3 0-5 1.7-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.7.3-1 1-1z" />
+              </svg>
             </a>
             <a href="#" aria-label="Instagram" className="transition hover:text-pink-600">
               <svg viewBox="0 0 24 24" className="h-5 w-5 fill-none stroke-current stroke-2"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>

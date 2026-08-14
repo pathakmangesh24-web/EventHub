@@ -69,7 +69,7 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
 
           {/* Card 1 */}
-          <div className="border rounded-2xl p-4 shadow-sm text-center">
+          <div className="border rounded-2xl p-4 shadow-sm text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-[#4a382f]s">
 
             <img
               src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=800&q=80"
@@ -94,7 +94,7 @@ const Home = () => {
 
 
           {/* Card 2 */}
-          <div className="border rounded-2xl p-4 shadow-sm text-center">
+          <div className="border rounded-2xl p-4 shadow-sm text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-[#4a382f]">
 
             <img
               src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80"
@@ -119,7 +119,7 @@ const Home = () => {
 
 
           {/* Card 3 */}
-          <div className="border rounded-2xl p-4 shadow-sm text-center">
+          <div className="border rounded-2xl p-4 shadow-sm text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-[#4a382f]">
 
             <img
               src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80"

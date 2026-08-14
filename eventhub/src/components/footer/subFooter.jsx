@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SubFooter = () => {
   return (
@@ -24,9 +25,11 @@ const SubFooter = () => {
               world about your business, and make this text yours.
             </p>
 
-            <button
+            <Link
+              to="/application"
               className="
                 mt-5
+                inline-block
                 px-5
                 py-2.5
                 border-2
@@ -34,6 +37,7 @@ const SubFooter = () => {
                 rounded-lg
                 text-base
                 font-serif
+                text-white
                 hover:bg-white
                 hover:text-[#382878]
                 transition-all
@@ -41,7 +45,7 @@ const SubFooter = () => {
               "
             >
               Apply Now
-            </button>
+            </Link>
 
           </div>
 
