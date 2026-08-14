@@ -23,6 +23,7 @@ const Header = () => {
             alt="Kiran Dighe"
             className="h-[60px] object-contain"
           />
+          <div className="text-xl font-black tracking-wide text-black">KIRAN DIGHE</div>
         </Link>
 
         <nav className="hidden items-center gap-8 text-[15px] md:flex ml-100">
