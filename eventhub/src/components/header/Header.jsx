@@ -5,9 +5,9 @@ const Header = () => {
   const [vendorOpen, setVendorOpen] = useState(false);
 
   const vendorItems = [
-    { name: 'Craft Vendor', to: '/craft-vendors' },
-    { name: 'Food Vendor', to: '/food-vendors' },
-    { name: 'Application', to: '/application' },
+    { name: '•   Craft Vendors', to: '/craft-vendors' },
+    { name: '•   Food Vendors', to: '/food-vendors' },
+    { name: '•   Applications', to: '/application' },
   ];
 
   const navLinkClass = ({ isActive }) =>

@@ -2,8 +2,8 @@ import React from "react";
 
 const SubFooter = () => {
   return (
-    <section className="w-full bg-[#382878] text-white">
-      <div className="max-w-6xl mx-auto px-6 py-12">
+    <section className="w-full bg-[#382878] text-white mt-20">
+      <div className="max-w-6xl mx-auto px-6 py-20">
 
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
 
