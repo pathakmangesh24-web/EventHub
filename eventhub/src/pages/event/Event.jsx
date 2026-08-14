@@ -27,7 +27,7 @@ const eventDates = [
 
 function Event() {
   return (
-    <main className="flex w-full flex-col gap-6">
+    <main className="flex w-full flex-col gap-6 items-center justify-center min-h-screen">
       <section
         className="relative flex min-h-[440px] items-center justify-center overflow-hidden bg-cover bg-center shadow-[inset_0_0_0_1px_rgba(255,255,255,0.15)] max-[620px]:min-h-[300px]"
         style={{
@@ -42,7 +42,7 @@ function Event() {
         </h1>
       </section>
 
-      <section className="grid w-full grid-cols-4 gap-6 max-[980px]:grid-cols-2 max-[620px]:grid-cols-1 px-5 mx-auto max-w-[1350px]">
+      <section className="grid w-full grid-cols-4 gap-6 max-[980px]:grid-cols-2 max-[620px]:grid-cols-1 px-5 mx-auto max-w-[1350px] py-12">
         {eventDates.map((event) => (
           <article
             key={event.title}
