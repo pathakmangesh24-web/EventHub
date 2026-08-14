@@ -46,21 +46,21 @@ function Event() {
         {eventDates.map((event) => (
           <article
             key={event.title}
-            className="flex min-h-[210px] flex-col justify-center rounded-[14px] border border-[rgba(148,163,184,0.18)] bg-[rgba(255,255,255,0.6)] px-6 py-8 shadow-[0_10px_18px_rgba(15,23,42,0.03)]"
+            className="flex min-h-[210px] flex-col justify-center rounded-[14px] border border-slate-200 bg-white px-6 py-8 shadow-[0_4px_12px_rgba(15,23,42,0.08)]"
           >
-            <h3 className="m-0 mb-4 text-[clamp(1.8rem,2vw,2.3rem)] font-medium leading-[1.15] text-slate-800">
+            <h3 className="m-0 mb-4 text-[clamp(1.8rem,2vw,2.3rem)] font-medium leading-[1.15] text-blue-600">
               {event.title}
             </h3>
 
-            <p className="my-[0.2rem] text-[1.02rem] leading-[1.6] text-slate-700">
+            <p className="my-[0.2rem] text-[1.02rem] leading-[1.6] text-slate-600">
               {event.date}
             </p>
 
-            <p className="my-[0.2rem] text-[1.02rem] leading-[1.6] text-slate-700">
+            <p className="my-[0.2rem] text-[1.02rem] leading-[1.6] text-slate-600">
               {event.time}
             </p>
 
-            <p className="my-[0.2rem] text-[1.02rem] leading-[1.6] text-slate-700">
+            <p className="my-[0.2rem] text-[1.02rem] leading-[1.6] text-slate-600">
                 
               {event.venue}
             </p>
