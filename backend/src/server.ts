@@ -1,4 +1,8 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import Fastify from "fastify";
+import db from "./config/db.js"
 
 const app = Fastify({
   logger: true,
@@ -6,15 +10,26 @@ const app = Fastify({
 
 app.get("/", async () => {
   return {
-    message: "hii poonam!",
+    message: "EventHub Backend Running",
   };
 });
 
-app.listen({ port: 5000 }, (err, address) => {
-  if (err) {
-    app.log.error(err);
+async function startServer() {
+  try {
+    await db.query("SELECT 1");
+
+    console.log("✅ Database connected successfully");
+
+    await app.listen({
+      port: Number(process.env.PORT) || 3000,
+      host: "0.0.0.0",
+    });
+
+    console.log("🚀 Server running");
+  } catch (error) {
+    console.error("❌ Error:", error);
     process.exit(1);
   }
+}
 
-  console.log(`Server running at ${address}`);
-});
+startServer();
