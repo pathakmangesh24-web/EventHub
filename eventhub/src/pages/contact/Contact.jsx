@@ -1,9 +1,9 @@
 import React from "react";
-
+ 
 function Contact() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
-
+ 
       {/* Hero Section */}
       <section
         className="relative h-[300px] w-full bg-cover bg-center sm:h-[400px] lg:h-[510px]"
@@ -18,15 +18,15 @@ function Contact() {
           </h1>
         </div>
       </section>
-
+ 
       {/* Contact Information */}
       <section className="mx-auto max-w-6xl px-5 py-8 text-center sm:px-6 lg:py-12">
-
+ 
         <div className="space-y-2 text-sm leading-6 sm:text-base">
           <p>888 Griffiths Way, Themeland ML 12345</p>
-
+ 
           <p>Tel: (987) 654-3210</p>
-
+ 
           <p className="break-words">
             Email:{" "}
             <a
@@ -37,7 +37,7 @@ function Contact() {
             </a>
           </p>
         </div>
-
+ 
         {/* Opening Hours */}
         <div className="mt-10 space-y-2 text-sm sm:mt-12 sm:text-base">
           <p className="font-medium">Open Hours:</p>
@@ -45,14 +45,14 @@ function Contact() {
           <p>Saturday: 10:30AM-8:00PM</p>
           <p>Sunday: Closed</p>
         </div>
-
+ 
       </section>
-
+ 
       {/* Contact Form */}
       <section className="mx-auto w-full max-w-5xl px-5 pb-12 sm:px-6 lg:pb-16">
-
+ 
         <form className="space-y-6 sm:space-y-7">
-
+ 
           {/* First Name */}
           <div>
             <label
@@ -61,14 +61,14 @@ function Contact() {
             >
               First Name*
             </label>
-
+ 
             <input
               id="firstName"
               type="text"
               className="h-12 w-full rounded border border-gray-300 px-4 outline-none transition focus:border-blue-500 focus:ring-1 focus:ring-blue-500 sm:h-[50px]"
             />
           </div>
-
+ 
           {/* Last Name */}
           <div>
             <label
@@ -77,14 +77,14 @@ function Contact() {
             >
               Last Name*
             </label>
-
+ 
             <input
               id="lastName"
               type="text"
               className="h-12 w-full rounded border border-gray-300 px-4 outline-none transition focus:border-blue-500 focus:ring-1 focus:ring-blue-500 sm:h-[50px]"
             />
           </div>
-
+ 
           {/* Email */}
           <div>
             <label
@@ -93,14 +93,14 @@ function Contact() {
             >
               Email*
             </label>
-
+ 
             <input
               id="email"
               type="email"
               className="h-12 w-full rounded border border-gray-300 px-4 outline-none transition focus:border-blue-500 focus:ring-1 focus:ring-blue-500 sm:h-[50px]"
             />
           </div>
-
+ 
           {/* Message */}
           <div>
             <label
@@ -109,14 +109,14 @@ function Contact() {
             >
               Message*
             </label>
-
+ 
             <textarea
               id="message"
               rows="5"
               className="w-full resize-y rounded border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
             ></textarea>
           </div>
-
+ 
           {/* Submit Button */}
           <div className="flex justify-center pt-2">
             <button
@@ -126,10 +126,10 @@ function Contact() {
               Submit
             </button>
           </div>
-
+ 
         </form>
       </section>
-
+ 
       {/* Back To Top Button */}
       <button
         onClick={() =>
@@ -143,9 +143,18 @@ function Contact() {
       >
         ↑
       </button>
-
+ 
+<div class="h-[500px] w-full">
+  <iframe
+    class="h-full w-full border-0"
+    src="https://www.google.com/maps?q=Pune,Maharashtra,India&output=embed"
+    loading="lazy"
+    allowfullscreen>
+  </iframe>
+</div>
     </div>
   );
 }
-
+ 
 export default Contact;
+ 
