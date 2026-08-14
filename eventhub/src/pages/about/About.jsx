@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -37,9 +38,12 @@ const About = () => {
               and make this text yours. This is a paragraph. You can write your own content here,
               and fill in the blanks.
             </p>
-            <button className="mt-6 rounded-[10px] border border-slate-700 bg-[#4c3a2f] px-8 py-4 text-lg font-medium text-white transition hover:bg-[#362b24]">
+            <Link
+              to="/craft-vendors"
+              className="inline-block mt-6 rounded-[10px] border border-slate-700 bg-[#4c3a2f] px-8 py-4 text-lg font-medium text-white transition hover:bg-[#362b24]"
+            >
               See Our Vendors
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -54,9 +58,14 @@ const About = () => {
             <p className="text-lg leading-8 text-slate-600">
               Discover unique, handcrafted gifts made with love. Whether you're shopping for a friend, family, or yourself, our vendors offer something special for everyone.
             </p>
-            <button className="mt-6 rounded-[10px] border border-slate-700 bg-[#4c3a2f] px-8 py-4 text-lg font-medium text-white transition hover:bg-[#362b24]">
+            <a
+              href="https://in.bookmyshow.com/explore/events"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-6 rounded-[10px] border border-slate-700 bg-[#4c3a2f] px-8 py-4 text-lg font-medium text-white transition hover:bg-[#362b24]"
+            >
               Buy Tickets
-            </button>
+            </a>
           </div>
 
           <div className="rounded-[22px] border border-slate-200 bg-white p-4 shadow-[0_15px_30px_rgba(15,23,42,0.04)]">

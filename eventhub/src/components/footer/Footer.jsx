@@ -106,7 +106,7 @@ const Footer = () => {
             <div className="flex items-center gap-7 mt-16 ml-[235px]">
 
               {/* Facebook */}
-              <a
+              {/* <a
                 href="#"
                 className="hover:text-blue-400 transition"
               >
@@ -117,12 +117,60 @@ const Footer = () => {
                 >
                   <path d="M14 8h3V4h-3c-3.31 0-5 1.69-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.67.33-1 1-1z" />
                 </svg>
+              </a> */}
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="transition hover:text-blue-600"
+              >
+                <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current">
+                  <path d="M14 8h3V4h-3c-3.3 0-5 1.7-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.7.3-1 1-1z" />
+                </svg>
               </a>
 
 
               {/* Instagram */}
-              <a
+              {/* <a
                 href="#"
+                className="hover:text-pink-400 transition"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <rect
+                    x="3"
+                    y="3"
+                    width="18"
+                    height="18"
+                    rx="5"
+                  />
+
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                  />
+
+                  <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a> */}
+              <a
+                href="https://www.instagram.com/mangesh_p31?igsh=bDM5YWJ1bnA2eDN4"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
                 className="hover:text-pink-400 transition"
               >
                 <svg
@@ -158,8 +206,23 @@ const Footer = () => {
 
 
               {/* LinkedIn */}
-              <a
+              {/* <a
                 href="#"
+                className="hover:text-blue-500 transition"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M4.5 3A2.5 2.5 0 1 0 4.5 8 2.5 2.5 0 0 0 4.5 3zM3 9h3v12H3V9zm5 0h3v1.7c.8-1.2 2.1-2 4-2 3 0 5 1.9 5 6v6h-3v-5.5c0-1.9-.7-3.3-2.5-3.3-1.5 0-2.5 1-2.5 3.1V21H8V9z" />
+                </svg>
+              </a> */}
+              <a
+                href="https://www.linkedin.com/in/mangesh-pathak-7a900b384?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
                 className="hover:text-blue-500 transition"
               >
                 <svg
