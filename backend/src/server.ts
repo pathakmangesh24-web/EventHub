@@ -1,35 +1,22 @@
-import dotenv from "dotenv";
+import dotenv from 'dotenv';
 dotenv.config();
 
-import Fastify from "fastify";
-import db from "./config/db.js"
+import express from 'express';
+import cors from 'cors';
+import eventRouter from './routes/event.js';
 
-const app = Fastify({
-  logger: true,
+const app = express();
+const PORT = Number(process.env.PORT || 3000);
+
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use('/api/event-forms', eventRouter);
+
+app.get('/api/health', (req, res) => res.json({ status: 'ok', message: 'Server is running' }));
+app.get('/health', (req, res) => res.json({ status: 'ok' }));
+
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server listening on port ${PORT}`);
 });
-
-app.get("/", async () => {
-  return {
-    message: "EventHub Backend Running",
-  };
-});
-
-async function startServer() {
-  try {
-    await db.query("SELECT 1");
-
-    console.log("✅ Database connected successfully");
-
-    await app.listen({
-      port: Number(process.env.PORT) || 3000,
-      host: "0.0.0.0",
-    });
-
-    console.log("🚀 Server running");
-  } catch (error) {
-    console.error("❌ Error:", error);
-    process.exit(1);
-  }
-}
-
-startServer();
